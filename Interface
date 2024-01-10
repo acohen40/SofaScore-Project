@@ -1,0 +1,10 @@
+def get_exg_input(prompt):
+    while True:
+        try:
+            value = float(input(prompt))
+            if -10.0 <= value <= 10.0:
+                return value
+            else:
+                print("Invalid input. Please enter a value between -10.0 and 10.0.")
+        except ValueError:
+            print("Invalid input. Please enter a numeric value.")
